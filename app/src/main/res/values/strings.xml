@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">ScoreKeeper</string>
-    <string name="game_name">Basketball</string>
+    <string name="game_name">Of Basketball</string>
     <string name="team_one">Team A</string>
     <string name="team_two">Team B</string>
     <string name="score">Scores</string>
+    <string name="score_1">1</string>
+    <string name="score_2">2</string>
+    <string name="score_3">3</string>
 </resources>
