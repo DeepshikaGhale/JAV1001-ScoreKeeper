@@ -19,7 +19,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:layout_weight="0.5"
         android:gravity="center"
         android:layout_height="wrap_content">
 
@@ -42,27 +42,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:orientation="horizontal">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:background="@drawable/btn_bg"
                 android:src="@drawable/decrease"
-                android:padding="8dp"
-                android:layout_weight="1"
+                android:padding="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginRight="100dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"/>
+
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_bg"
                 android:layout_weight="1"
-                android:padding="8dp"
-                android:layout_marginLeft="150dp"
+                android:padding="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="100dp"
                 android:src="@drawable/increase" />
 
         </LinearLayout>
@@ -95,27 +95,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:orientation="horizontal">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:background="@drawable/btn_bg"
                 android:src="@drawable/decrease"
-                android:padding="8dp"
-                android:layout_weight="1"
+                android:padding="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginRight="100dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"/>
+
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_bg"
                 android:layout_weight="1"
-                android:padding="8dp"
-                android:layout_marginLeft="150dp"
+                android:padding="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="100dp"
                 android:src="@drawable/increase" />
 
         </LinearLayout>
