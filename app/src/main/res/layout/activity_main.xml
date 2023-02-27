@@ -97,6 +97,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/decrease_btn"
                 android:layout_width="wrap_content"
                 android:background="@drawable/btn_bg"
                 android:src="@drawable/decrease"
@@ -108,6 +109,7 @@
 
 
             <ImageButton
+                android:id="@+id/increase_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_bg"
@@ -192,7 +194,6 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/decrease_btn"
                 android:layout_width="wrap_content"
                 android:background="@drawable/btn_bg"
                 android:src="@drawable/decrease"
