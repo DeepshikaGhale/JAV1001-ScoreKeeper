@@ -50,15 +50,15 @@
             android:text="@string/score"/>
 
         <RadioGroup
+            android:id="@+id/teamA_radio_grp"
             android:layout_width="match_parent"
             android:layout_margin="10dp"
             android:orientation="horizontal"
             android:gravity="center"
-
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radio_btn_1"
+                android:id="@+id/teamA_radio_btn_1"
                 android:text="@string/score_1"
                 android:layout_marginRight="20dp"
                 android:buttonTint="@color/grey"
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_btn_2"
+                android:id="@+id/teamA_radio_btn_2"
                 android:text="@string/score_2"
                 android:layout_marginRight="20dp"
                 android:buttonTint="@color/grey"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_btn_3"
+                android:id="@+id/teamA_radio_btn_3"
                 android:text="@string/score_3"
                 android:buttonTint="@color/grey"
                 android:textColor="@color/grey"
@@ -143,6 +143,48 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:text="@string/score"/>
+
+        <RadioGroup
+            android:id="@+id/teamB_radio_grp"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/teamB_radio_btn_1"
+            android:text="@string/score_1"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/grey"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/teamB_radio_btn_2"
+            android:text="@string/score_2"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/grey"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/teamB_radio_btn_3"
+            android:text="@string/score_3"
+            android:buttonTint="@color/grey"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </RadioGroup>
 
         <LinearLayout
             android:layout_width="match_parent"
