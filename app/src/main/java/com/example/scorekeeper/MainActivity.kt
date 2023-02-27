@@ -9,6 +9,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
+    //initialization
     private lateinit var decrease : ImageButton
     private lateinit var increase : ImageButton
     private lateinit var teamARadioGroup: RadioGroup
@@ -18,14 +19,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //connects xml and .kt file through view ids
         decrease = findViewById(R.id.decrease_btn)
         increase = findViewById(R.id.increase_btn)
         teamARadioGroup = findViewById(R.id.teamA_radio_grp)
         teamBRadioGroup = findViewById(R.id.teamB_radio_grp)
 
+        //when minus button of team A is pressed
         decrease.setOnClickListener() { decrease() }
-        increase.setOnClickListener() { increase }
 
+        //when plus button of team A is pressed
+        increase.setOnClickListener() { increase() }
+
+        //gives toast message with current radio button text for team A
         teamARadioGroup.setOnCheckedChangeListener(
             RadioGroup.OnCheckedChangeListener { _,
                                                  checkedId ->
@@ -36,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
+        //gives toast message with current radio button text for team A
         teamBRadioGroup.setOnCheckedChangeListener(
             RadioGroup.OnCheckedChangeListener { _,
                                                  checkedId ->
