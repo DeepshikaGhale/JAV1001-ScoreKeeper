@@ -42,28 +42,14 @@
             android:textColor="@color/app_color"
             android:text="@string/team_one"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:text="@string/score"/>
-
             <EditText
                 android:layout_margin="8dp"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:background="@drawable/text_input_border"
                 android:layout_width="100dp"
+                android:focusable="false"
                 android:textCursorDrawable="@drawable/cursor_drawable"
                 android:layout_height="45dp"/>
-        </LinearLayout>
 
         <RadioGroup
             android:id="@+id/teamA_radio_grp"
@@ -103,8 +89,6 @@
                 android:layout_height="wrap_content"
               />
 
-
-
         </RadioGroup>
 
         <LinearLayout
@@ -122,7 +106,6 @@
                 android:layout_marginRight="100dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"/>
-
 
             <ImageButton
                 android:id="@+id/increase_btn"
@@ -155,15 +138,17 @@
             android:textColor="@color/app_color"
             android:text="@string/team_two"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="16dp"
-            android:text="@string/score"/>
+            <EditText
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                android:focusable="false"
+                android:layout_gravity="center"
+                android:background="@drawable/text_input_border"
+                android:layout_width="100dp"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:layout_height="45dp"/>
+
+
 
         <RadioGroup
             android:id="@+id/teamB_radio_grp"
@@ -221,7 +206,6 @@
                 android:layout_marginRight="100dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"/>
-
 
             <ImageButton
                 android:layout_width="wrap_content"
