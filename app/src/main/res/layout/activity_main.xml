@@ -42,13 +42,27 @@
             android:textColor="@color/app_color"
             android:text="@string/team_one"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:text="@string/score"/>
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/score"/>
+
+            <EditText
+                android:layout_margin="8dp"
+                android:padding="5dp"
+                android:background="@drawable/text_input_border"
+                android:layout_width="100dp"
+                android:layout_height="45dp"/>
+        </LinearLayout>
 
         <RadioGroup
             android:id="@+id/teamA_radio_grp"
