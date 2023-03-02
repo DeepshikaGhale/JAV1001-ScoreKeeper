@@ -61,6 +61,7 @@
                 android:padding="5dp"
                 android:background="@drawable/text_input_border"
                 android:layout_width="100dp"
+                android:textCursorDrawable="@drawable/cursor_drawable"
                 android:layout_height="45dp"/>
         </LinearLayout>
 
