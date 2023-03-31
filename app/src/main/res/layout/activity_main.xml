@@ -49,9 +49,7 @@
             android:id="@+id/radio_btn_1"
             android:text="@string/score_1"
             android:layout_marginRight="20dp"
-            android:buttonTint="@color/grey"
-            android:textColor="@color/grey"
-            android:textStyle="bold"
+            style="@style/RadioButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -59,18 +57,14 @@
             android:id="@+id/radio_btn_2"
             android:text="@string/score_2"
             android:layout_marginRight="20dp"
-            android:buttonTint="@color/grey"
-            android:textColor="@color/grey"
-            android:textStyle="bold"
+            style="@style/RadioButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <RadioButton
             android:id="@+id/radio_btn_3"
             android:text="@string/score_3"
-            android:buttonTint="@color/grey"
-            android:textColor="@color/grey"
-            android:textStyle="bold"
+            style="@style/RadioButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
@@ -85,10 +79,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:layout_gravity="center"
-            android:textColor="@color/app_color"
+            style="@style/TeamLabelText"
             android:text="@string/team_one"/>
 
             <EditText
@@ -143,10 +135,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
             android:layout_gravity="center"
-            android:textStyle="bold"
-            android:textColor="@color/app_color"
+            style="@style/TeamLabelText"
             android:text="@string/team_two"/>
 
             <EditText
