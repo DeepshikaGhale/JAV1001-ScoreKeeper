@@ -13,7 +13,7 @@
         android:gravity="center"
         android:layout_height="wrap_content"
         style="@style/ScorekeeperText"
-        android:text="Scorekeeper"/>
+        android:text="@string/app_name"/>
 
     <TextView
         android:layout_width="match_parent"
