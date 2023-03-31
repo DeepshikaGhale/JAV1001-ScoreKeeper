@@ -12,9 +12,7 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/app_color"
+        style="@style/ScorekeeperText"
         android:text="Scorekeeper"/>
 
     <TextView
