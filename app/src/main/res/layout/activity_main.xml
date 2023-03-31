@@ -73,20 +73,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             style="@style/TeamLabelText"
             android:text="@string/team_one"/>
 
             <EditText
                 android:id="@+id/teamA_score"
-                android:layout_margin="8dp"
-                android:padding="10dp"
-                android:layout_gravity="center"
-                android:background="@drawable/text_input_border"
-                android:layout_width="100dp"
-                android:focusable="false"
-                android:textCursorDrawable="@drawable/cursor_drawable"
-                android:layout_height="45dp"/>
+                style="@style/EditTextStyle" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,9 +88,8 @@
             <ImageButton
                 android:id="@+id/teamA_decrease_btn"
                 android:layout_width="wrap_content"
-                android:background="@drawable/btn_bg"
+                style="@style/ButtonStyle"
                 android:src="@drawable/decrease"
-                android:padding="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="100dp"
                 android:layout_weight="1"
@@ -108,9 +99,8 @@
                 android:id="@+id/teamA_increase_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn_bg"
+                style="@style/ButtonStyle"
                 android:layout_weight="1"
-                android:padding="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="100dp"
                 android:src="@drawable/increase" />
@@ -129,20 +119,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             style="@style/TeamLabelText"
             android:text="@string/team_two"/>
 
             <EditText
                 android:id="@+id/teamB_score"
-                android:layout_margin="8dp"
-                android:padding="10dp"
-                android:focusable="false"
-                android:layout_gravity="center"
-                android:background="@drawable/text_input_border"
-                android:layout_width="100dp"
-                android:textCursorDrawable="@drawable/cursor_drawable"
-                android:layout_height="45dp"/>
+                style="@style/EditTextStyle" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -152,9 +134,8 @@
             <ImageButton
                 android:id="@+id/teamB_decrease_btn"
                 android:layout_width="wrap_content"
-                android:background="@drawable/btn_bg"
+                style="@style/ButtonStyle"
                 android:src="@drawable/decrease"
-                android:padding="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="100dp"
                 android:layout_weight="1"
@@ -164,9 +145,8 @@
                 android:id="@+id/teamB_increase_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn_bg"
+                style="@style/ButtonStyle"
                 android:layout_weight="1"
-                android:padding="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="100dp"
                 android:src="@drawable/increase" />

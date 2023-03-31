@@ -3,6 +3,7 @@
     <style name="TeamLabelText">
         <item name="android:textColor">@color/app_color</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:textStyle">bold</item>
     </style>
 </resources>
