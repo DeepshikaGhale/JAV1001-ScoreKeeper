@@ -1,10 +1,12 @@
 package com.example.scorekeeper
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.RadioButton
@@ -87,6 +89,26 @@ class MainActivity : AppCompatActivity() {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.score_keeper_menu, menu)
         return true
+    }
+
+    //add action to menu items
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle item selection
+        return when (item.itemId) {
+            R.id.about_id -> {
+                Toast.makeText(this, "This is about menu item", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.settings_id -> {
+                settings()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    fun settings(){
+
     }
 
     //increases team A score
