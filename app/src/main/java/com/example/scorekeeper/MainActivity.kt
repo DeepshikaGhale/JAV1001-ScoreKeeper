@@ -3,6 +3,8 @@ package com.example.scorekeeper
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.RadioButton
@@ -78,6 +80,13 @@ class MainActivity : AppCompatActivity() {
                 scoreValue = score.text.toString().toInt()
             }
         )
+    }
+
+    //adding menu to action bar
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.score_keeper_menu, menu)
+        return true
     }
 
     //increases team A score
