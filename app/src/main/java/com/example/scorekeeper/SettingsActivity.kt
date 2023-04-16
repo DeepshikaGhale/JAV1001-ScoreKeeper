@@ -17,22 +17,27 @@ class SettingsActivity : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //enable back button
         supportActionBar?.apply {
             title = "Settings"
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
 
+        //set value from intent
         val scoreA = intent.getIntExtra("scoreA", 0)
         val scoreB = intent.getIntExtra("scoreB", 0)
 
+
         binding.switchId.setOnClickListener(){
             val switch_state =  binding.switchId.isChecked
-
+            //switch is true
             if(switch_state){
                 storeScore(scoreA, scoreB)
                 Toast.makeText(this, "Score has been saved", Toast.LENGTH_SHORT).show()
-            }else{
+            }
+            //switch if false
+            else{
                 removeScore()
                 Toast.makeText(this, "Score has been removed", Toast.LENGTH_SHORT).show()
             }
