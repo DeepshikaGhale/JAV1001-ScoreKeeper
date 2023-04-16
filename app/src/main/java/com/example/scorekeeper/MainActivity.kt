@@ -1,6 +1,7 @@
 package com.example.scorekeeper
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //retrieve data from local storage
+        displayScore()
 
         //connects xml and .kt file through view ids
         increaseBtnA = findViewById(R.id.teamA_increase_btn)
@@ -152,5 +156,19 @@ class MainActivity : AppCompatActivity() {
     //notifies user about score update
     private fun message(team: Char){
         Toast.makeText(this, "Score for team $team has been updates successfully.", Toast.LENGTH_SHORT).show()
+    }
+
+    //read data from local storage
+    private fun displayScore(){
+
+            val sharedPref = getSharedPreferences("MyAppPreferences", Context.MODE_PRIVATE)
+            val editor = sharedPref.all
+
+            scoreA = sharedPref.getInt("scoreA", 0)
+            scoreB = sharedPref.getInt("scoreB", 0)
+
+
+            Log.d("alldata", editor.size.toString())
+
     }
 }
