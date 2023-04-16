@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("scoreA", scoreA)
         intent.putExtra("scoreB", scoreB)
         Log.d("scores", "$scoreA $scoreB")
-        startActivity(intent)
+        applicationContext.startActivity(intent)
     }
 
     //increases team A score
