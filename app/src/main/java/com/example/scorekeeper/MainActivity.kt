@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -107,8 +108,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun settings(){
-
+    private fun settings(){
+        val intent = Intent(this, SettingsActivity::class.java)
+        intent.putExtra("scoreA", scoreA)
+        intent.putExtra("scoreB", scoreB)
+        Log.d("scores", "$scoreA $scoreB")
+        startActivity(intent)
     }
 
     //increases team A score

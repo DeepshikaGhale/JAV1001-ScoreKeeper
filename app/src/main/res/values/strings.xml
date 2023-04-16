@@ -8,6 +8,6 @@
     <string name="score_2">2</string>
     <string name="score_3">3</string>
     <string name="about">About</string>
+    <string name="save_current">Save the current score:</string>
     <string name="settings">Settings</string>
-
 </resources>
