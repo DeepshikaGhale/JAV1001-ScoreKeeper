@@ -6,22 +6,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SettingsActivity">
-
+<!--    settings layout-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:text="@string/save_current"
             android:layout_margin="16dp"
             style="@style/SecondaryText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
+<!--    switch button to save the score-->
         <Switch
             android:id="@+id/switch_id"
             android:layout_margin="16dp"
             android:checked="false"
+            android:outlineSpotShadowColor="@color/app_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
