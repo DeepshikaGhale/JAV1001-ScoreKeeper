@@ -28,7 +28,6 @@ class SettingsActivity : AppCompatActivity() {
 
         binding.switchId.setOnClickListener(){
             val switch_state =  binding.switchId.isChecked
-            Log.d("switch_state", switch_state.toString())
 
             if(switch_state){
                 storeScore(scoreA, scoreB)
@@ -50,9 +49,6 @@ class SettingsActivity : AppCompatActivity() {
         editor.putInt("scoreA", scoreA)
         editor.putInt("scoreB", scoreB)
         editor.apply()
-
-        var alldata = sharedPref.all
-        Log.d("alldata", alldata.toString())
     }
 
     //remove data from local storage
@@ -62,7 +58,5 @@ class SettingsActivity : AppCompatActivity() {
         editor.remove("scoreA")
         editor.remove("scoreB")
         editor.apply()
-        var alldata = sharedPref.all
-        Log.d("alldata", alldata.size.toString())
     }
 }

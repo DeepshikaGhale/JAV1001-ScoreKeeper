@@ -160,15 +160,9 @@ class MainActivity : AppCompatActivity() {
 
     //read data from local storage
     private fun displayScore(){
-
             val sharedPref = getSharedPreferences("MyAppPreferences", Context.MODE_PRIVATE)
-            val editor = sharedPref.all
 
             scoreA = sharedPref.getInt("scoreA", 0)
             scoreB = sharedPref.getInt("scoreB", 0)
-
-
-            Log.d("alldata", editor.size.toString())
-
     }
 }
